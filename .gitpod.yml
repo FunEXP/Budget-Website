@@ -12,7 +12,9 @@ ports:
     onOpen: open-preview
 tasks:
   - init: npm install && npm run build
-    command: npm run dev
+    command: |
+      export HMR_HOST=`gp url 3000` 
+      npm run dev
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
