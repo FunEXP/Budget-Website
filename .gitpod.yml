@@ -9,7 +9,7 @@ github:
     pullRequests: true
 ports:
   - port: 3000
-    onOpen: open-preview
+    onOpen: open-browser
 tasks:
   - init: npm install && npm run build
     command: |
