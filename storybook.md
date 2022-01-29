@@ -16,3 +16,7 @@ Reorganise the stories folder under src
 There is a storybook for vite which will allow easier installation of tailwindcss
 https://stackoverflow.com/questions/65495912/storybook-tailwind-how-should-i-add-tailwind-to-storybook
 and generally seems hard to set the alias for svelte eg sth similar to $lib
+
+Resources:
+- Writing story: https://storybook.js.org/docs/react/writing-stories/introduction
+- Better story explanation: https://storybook.js.org/tutorials/intro-to-storybook/svelte/en/simple-component/
