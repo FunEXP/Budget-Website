@@ -14,11 +14,13 @@ ports:
   - port: 6006
     onOpen: open-browser
 tasks:
-  - init: npm install && npm run build
+  - name: Starting base - svelte
+    init: npm install && npm run build
     command: |
       export HMR_HOST=`gp url 3000` 
       npm run dev
-      npm run storybook
+  - name: Storybook
+    command: npm run storybook
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
