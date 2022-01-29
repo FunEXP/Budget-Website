@@ -1,6 +1,6 @@
 <script>
   import './header.css';
-  import Button from './Button.svelte';
+  import Button from '../Button/Button.svelte';
 
   import { createEventDispatcher } from 'svelte';
 
@@ -37,11 +37,11 @@
     </div>
     <div>
       {#if user}
-        <Button size="small" on:click={onLogout} label="Log out" />
+        <Button size="small" on:click={onLogout} label="Log out" backgroundColor/>
       {/if}
       {#if !user}
-        <Button size="small" on:click={onLogin} label="Log in" />
-        <Button primary size="small" on:click={onCreateAccount} label="Sign up" />
+        <Button size="small" on:click={onLogin} label="Log in" backgroundColor />
+        <Button primary size="small" on:click={onCreateAccount} label="Sign up" backgroundColor />
       {/if}
     </div>
   </div>

@@ -11,3 +11,8 @@ Instead rename main.js to end in .cjs, change the requiring code to use dynamic 
 create a package.json file in `.storybook` folder
 
 Reorganise the stories folder under src
+
+
+There is a storybook for vite which will allow easier installation of tailwindcss
+https://stackoverflow.com/questions/65495912/storybook-tailwind-how-should-i-add-tailwind-to-storybook
+and generally seems hard to set the alias for svelte eg sth similar to $lib
