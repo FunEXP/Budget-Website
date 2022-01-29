@@ -20,7 +20,7 @@ tasks:
       export HMR_HOST=`gp url 3000` 
       npm run dev
   - name: Storybook
-    command: npm run storybook
+    command: cd src && npm run storybook
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
