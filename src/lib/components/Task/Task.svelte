@@ -1,4 +1,5 @@
 <script>
+    import './task.css';
     import { createEventDispatcher } from 'svelte';
 
     const dispatch = createEventDispatcher();
@@ -35,19 +36,8 @@
 </div> -->
 
 <div class="list-item {task.state}">
-    <label for="checkbox">
-        <input type="checkbox" checked={isChecked} disabled name="checked" />
-        <span class="checkbox-custom" on:click={ArchiveTask} aria-label={`achiveTask-${task.id}`} />
-    </label>
     <div class="title">
-        <input type="text" readonly value={task.title} placeholder="Input title" />
-    </div>
-    <div class="actions">
-        {#if task.state !== 'TASK_ARCHIVED'}
-        <a href="/" on:click|preventDefault={PinTask}>
-            <span class="icon-star" aria-label={`pinTask-${task.id}`} />
-        </a>
-        {/if}
+        <input class="descrip" type="text" value={task.title} placeholder="Input title" />
     </div>
 </div>
 
