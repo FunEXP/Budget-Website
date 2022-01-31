@@ -25,6 +25,4 @@ tasks:
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
-
-
     - svelte.svelte-vscode
