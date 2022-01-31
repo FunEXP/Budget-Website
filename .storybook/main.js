@@ -3,7 +3,7 @@ module.exports = {
   //   "../src/**/*.stories.mdx",
   //   "../src/**/*.stories.@(js|jsx|ts|tsx|svelte)"
   // ],
-  stories: ['../src/components/**/*.stories.js'],
+  stories: ['../src/lib/components/**/*.stories.js'],
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials"
