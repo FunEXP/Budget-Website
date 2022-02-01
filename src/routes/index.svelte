@@ -1,5 +1,16 @@
-<script>
-    import Page from '$lib/components/Page/Page.svelte'
+<script lang="ts">
+    import Task from '$lib/components/Task/Task.svelte'
+
+    const title = "Budget";
 </script>
 
-<Page />
+<!-- <Page /> -->
+
+<svelte:head>
+    <title>{title}</title>
+</svelte:head>
+
+<div class="transactions">
+    <h1>{title}</h1>
+    <Task />
+</div>
