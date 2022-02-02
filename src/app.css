@@ -1,3 +1,13 @@
 body {
     background-color: #efd9c1;
 }
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.transactions {
+    width: 100%;
+}

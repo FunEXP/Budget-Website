@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import './task.css';
     import { createEventDispatcher } from 'svelte';
 
@@ -19,12 +19,7 @@
     } 
 
     // Task props
-    export let task = {
-        id:'',
-        title:'',
-        state: '',
-        updatedAt: new Date(),
-    };
+    export let task;
 
     // Reactive declaration
     $: isChecked = task.state == 'TASK_ARCHIVED';
@@ -37,7 +32,7 @@
 
 <div class="list-item {task.state}">
     <div class="title">
-        <input class="descrip" type="text" value={task.title} placeholder="Input title" />
+        <input class="descrip" type="text" value={task.description} placeholder="Input title" />
     </div>
 </div>
 
